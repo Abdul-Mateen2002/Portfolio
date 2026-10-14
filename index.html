@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdul Mateen Khan — Software Engineer · Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Abdul Mateen Khan, Software Engineering graduate from CECOS University, Peshawar. Full-stack projects with React, TypeScript, Flask and Express.">
+<meta property="og:title" content="Abdul Mateen Khan — Software Engineer · Full-Stack Developer">
+<meta property="og:description" content="Full-stack projects: Darzify, an offline-first tailor-shop POS, and an AI-content checker for research papers and images.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#home" aria-label="Abdul Mateen Khan, home">AMK<span>.</span></a>
+    <nav id="nav" aria-label="Primary">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      <a class="btn sm" href="assets/resume.pdf" download>Résumé</a>
+    </nav>
+    <button id="theme" class="icon" type="button" aria-label="Switch colour theme">◐</button>
+    <button id="burger" class="icon burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero wrap" id="home">
+  <div class="hero__text">
+    <p class="pill r"><i></i> Open to software engineering roles</p>
+    <h1 class="r">Hi, I'm Abdul Mateen Khan. I build <em>full-stack</em> web apps.</h1>
+    <p class="lead r">Software Engineering graduate from CECOS University, Peshawar. I work with React, TypeScript, Flask and Express, and I like products that keep working in the real world.</p>
+    <div class="row r"><a class="btn" href="#projects">See my projects</a><a class="btn ghost" href="#contact">Contact me</a></div>
+  </div>
+  <img class="hero__img r" src="assets/profile.jpg" width="800" height="800" fetchpriority="high" alt="Portrait of Abdul Mateen Khan against a blue sky">
+</section>
+
+<section class="wrap" id="about" aria-labelledby="about-h">
+  <h2 id="about-h" class="h2 r">About</h2>
+  <div class="bento">
+    <article class="card span2 r">
+      <h3>Who I am</h3>
+      <p>I finished my B.S. in Software Engineering in 2026. Coursework in data structures, databases, software quality assurance and AI fed into two full-stack projects. I'm most interested in web development, AI-powered applications and building useful digital products.</p>
+    </article>
+    <article class="card r">
+      <h3>Education</h3>
+      <p><b>B.S. Software Engineering</b><br>CECOS University of IT &amp; Emerging Sciences, Peshawar<br>2022 – 2026 · CGPA 3.17 / 4.00</p>
+    </article>
+    <article class="card r">
+      <h3>Languages</h3>
+      <ul class="chips"><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>C++</li><li>SQL</li><li>Java</li><li>HTML5</li><li>CSS3</li></ul>
+    </article>
+    <article class="card r">
+      <h3>Frameworks &amp; APIs</h3>
+      <ul class="chips"><li>React</li><li>Tailwind CSS</li><li>Flask</li><li>Express</li><li>REST APIs</li><li>PWA</li></ul>
+    </article>
+    <article class="card r">
+      <h3>Data &amp; tools</h3>
+      <ul class="chips"><li>SQLite</li><li>MySQL</li><li>IndexedDB (Dexie)</li><li>Git &amp; GitHub</li><li>Postman</li><li>Linux / CLI</li></ul>
+    </article>
+  </div>
+</section>
+
+<section class="wrap" id="projects" aria-labelledby="proj-h">
+  <h2 id="proj-h" class="h2 r">Featured projects</h2>
+
+  <article class="proj r" id="darzify">
+    <div>
+      <p class="kicker">Full-stack project</p>
+      <h3>Darzify — Digital Tailor Shop</h3>
+      <p>A bilingual (Urdu / English) point-of-sale web app for a tailor shop: booking, measurements, pricing, advance payment and order-status tracking, built to keep working without internet.</p>
+      <div class="row"><a class="btn sm" href="https://github.com/Abdul-Mateen2002/Darzify" target="_blank" rel="noopener noreferrer">View on GitHub<span class="sr"> (opens in a new tab)</span></a></div>
+    </div>
+    <ul class="ticks">
+      <li><b>Offline-first:</b> installable PWA with a service worker; orders and customers stored in IndexedDB via Dexie.</li>
+      <li><b>Thermal receipts:</b> Urdu tickets drawn on a canvas and sent as ESC/POS raster over Web Bluetooth, Web Serial or a Java Android bridge.</li>
+      <li><b>Secured API:</b> Express API protects settings and order deletion with salted PBKDF2 PIN hashing and expiring session tokens; JSON backup and restore.</li>
+      <li><b>Verifiable receipts:</b> unique codes and SHA-256 fingerprints for tamper detection; PDF receipts shareable via WhatsApp.</li>
+    </ul>
+    <div class="shots wide" tabindex="0" role="region" aria-label="Darzify screenshots (scrollable)">
+      <figure><img src="assets/darzify/dashboard.jpg" width="900" height="403" loading="lazy" alt="Darzify bookings dashboard with Today's Due, Overdue, Ready and In Workshop counters and an order list"><figcaption>Bookings dashboard</figcaption></figure>
+      <figure><img src="assets/darzify/booking.jpg" width="860" height="809" loading="lazy" alt="New booking form with customer details and garment selection"><figcaption>New booking and garment selection</figcaption></figure>
+      <figure><img src="assets/darzify/details.jpg" width="780" height="832" loading="lazy" alt="Order details showing the order lifecycle status and a measurements grid in inches"><figcaption>Order status and measurements</figcaption></figure>
+      <figure><img src="assets/darzify/print.jpg" width="680" height="824" loading="lazy" alt="Receipt preview with thermal print, browser print, PDF and WhatsApp options"><figcaption>Print, PDF and WhatsApp sharing</figcaption></figure>
+      <figure><img src="assets/darzify/receipt.jpg" width="440" height="718" loading="lazy" alt="Thermal receipt with Urdu text and a verification code"><figcaption>Receipt with verification code</figcaption></figure>
+      <figure><img src="assets/darzify/security.jpg" width="780" height="831" loading="lazy" alt="Security settings showing the administrator PIN protected by a salted PBKDF2-SHA512 hash"><figcaption>Admin security settings</figcaption></figure>
+    </div>
+    <ul class="chips wide"><li>TypeScript</li><li>React</li><li>Tailwind CSS</li><li>Express</li><li>Dexie</li><li>jsPDF</li><li>PWA</li><li>Java</li></ul>
+  </article>
+
+  <article class="proj r" id="integrity">
+    <div>
+      <p class="kicker">Final year project · Team project</p>
+      <h3>AI Integrity Checker for Research Papers</h3>
+      <p>A web platform where a user uploads a research paper and sees how much of it is human-written and how much is AI-generated. It does the same for pictures (AI-generated vs captured) and presents the result as a report.</p>
+    </div>
+    <ul class="ticks">
+      <li><b>My contribution included:</b> the Flask backend and REST API, the React front end and a normalized SQLite schema (users, documents, reports).</li>
+      <li><b>API design:</b> documented endpoints for upload, processing status and report retrieval with consistent JSON and HTTP errors.</li>
+      <li><b>Safe uploads:</b> type and size checks, safe file naming and structured error messages.</li>
+    </ul>
+    <ul class="chips wide"><li>Python</li><li>Flask</li><li>React</li><li>SQLite</li><li>REST APIs</li><li>Git</li></ul>
+  </article>
+</section>
+
+<section class="wrap" id="experience" aria-labelledby="exp-h">
+  <h2 id="exp-h" class="h2 r">Experience &amp; certificates</h2>
+  <div class="bento two">
+    <article class="card r">
+      <h3>Web Developer and Marketing Expert Intern</h3>
+      <p><b>Vector Limited</b> · Internship<br>1 Aug – 1 Oct 2026</p>
+      <!-- TODO(owner): add confirmed responsibilities and tools. -->
+    </article>
+    <article class="card r">
+      <h3>Certificates (FutureLearn, Sept 2026)</h3>
+      <ul class="links">
+        <li><a href="https://www.futurelearn.com/certificates/5vt47nr" target="_blank" rel="noopener noreferrer">Cybersecurity for Citizens and Professionals · 94%<span class="sr"> (opens in a new tab)</span></a></li>
+        <li><a href="https://www.futurelearn.com/certificates/ijlq672" target="_blank" rel="noopener noreferrer">Cloud for CISOs (AWS)<span class="sr"> (opens in a new tab)</span></a></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="wrap contact r" id="contact" aria-labelledby="c-h">
+  <h2 id="c-h" class="h2">Let's work together.</h2>
+  <p class="lead">Email is the quickest way to reach me.</p>
+  <div class="row"><a class="btn" href="mailto:mateen.abdul223@gmail.com">mateen.abdul223@gmail.com</a><a class="btn ghost" href="assets/resume.pdf" download>Download résumé</a></div>
+  <p class="row soc"><a href="https://github.com/Abdul-Mateen2002" target="_blank" rel="noopener noreferrer me">GitHub<span class="sr"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/abdul-mateen-a93719426" target="_blank" rel="noopener noreferrer me">LinkedIn<span class="sr"> (opens in a new tab)</span></a></p>
+</section>
+</main>
+
+<footer class="wrap foot"><p>&copy; <span id="year">2026</span> Abdul Mateen Khan · Peshawar, Pakistan</p><a href="#home">Back to top ↑</a></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
